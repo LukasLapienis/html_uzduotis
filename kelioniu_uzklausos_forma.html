@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>užklausos forma</title>
 </head>
+<body>
 <header>
     <h1>Kelionių agentūra</h1>
-    <a href="index.html"><img src="images/logo.jpg" alt="logotipas" width="100%"></a><br>
+    <a href="index.html"><img src="images/logo.jpg" alt="logotipas" style="width: 100%;"></a><br>
     <a href="login_form.html">Log in</a>
     <a href="personal_blog.html">personal blog</a><hr>
     <nav>
@@ -17,22 +18,98 @@
         <a href="#kelioniuZurnalas">Kelionių žurnalas</a>
     </nav><hr>
 </header>
-<body>
-    
-</body>
+<main>
+    <article>
+        <h2>Kelionės forma</h2>
+        <form action="index.html">
+            <fieldset>
+                <legend>Asmens duomenys</legend>
+                <label for="firstName">Vardas</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jūsų vardas" pattern="[ąčęėįšųūžĄČĘĖĮŠŲŪŽA-Za-z]{2,15}" required>
+                <label for="lastName">Pavardė</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Jūsų pavardė" pattern="[ąčęėįšųūžĄČĘĖĮŠŲŪŽA-Za-z]{2,20}" required>
+            </fieldset>
+            <fieldset>
+                <legend>Kontaktai</legend>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <label for="phone">Telefono numeris</label>
+                <input type="tel" id="phone" name="phone" pattern="\+\d{8,15}" value="+" title="prasideda su +" required>
+            </fieldset>
+            <fieldset>
+                <legend>Kelionės informacija</legend>
+                <label for="keliautojuSkaicius">Keliautojų skaičius:</label>
+                <select id="keliautojuSkaicius">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="daugiau">daugiau</option>
+                </select>
+                <label for="country">Šalis:</label>
+                <select name="country" id="country">
+                    <option value="any">Nesvarbu</option>
+                    <option value="maldives">Maldyvai</option>
+                    <option value="poland">Lenkija</option>
+                    <option value="turkey">Turkija</option>
+                    <option value="spain">Ispanija</option>
+                    <option value="portugal">Portugalija</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Kelionės data</legend>
+                <label for="startDate">Kelionės pradžia</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <label for="endDate">Kelionės pabaiga</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </fieldset>
+            <fieldset>
+                <legend>Kelionės tipas</legend>
+                <label for="poilsine">Poilsinė</label>
+                <input type="checkbox" name="kelionėsTipas" id="poilsine" value="poilsine">
+                <label for="pazintine">Pažintinė</label>
+                <input type="checkbox" name="kelionėsTipas" id="pazintine" value="pazintine"> 
+                <label for="allInclusive">Viskas įskaičiuota</label>
+                <input type="checkbox" name="kelionėsTipas" id="allInclusive" value="allInclusive">
+                <label for="savarankiska">Savarankiška</label>
+                <input type="checkbox" name="kelionėsTipas" id="savarankiska" value="savarankiska">
+            </fieldset>
+            <fieldset>
+                <legend>Biudžetas</legend>
+                <label for="iki500">iki 500 &euro;</label>
+                <input type="radio" id="iki500" name="biudzetas" value="iki500" required>
+                <label for="virs500">virš 500 &euro;</label>
+                <input type="radio" id="virs500" name="biudzetas" value="virs500" required>
+                <label for="virs1000">virš 1000 &euro;</label>
+                <input type="radio" id="virs1000" name="biudzetas" value="virs1000" required>
+                <label for="virs2000">virš 2000 &euro;</label>
+                <input type="radio" id="virs2000" name="biudzetas" value="virs2000" required>
+            </fieldset>
+            <fieldset>
+                <legend>Papildoma informacija: </legend>
+                <textarea id="more" maxlength="200"></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="reset">Atstatyti</button>
+                <button type="submit">Siųsti</button>
+            </fieldset>
+        </form>
+    </article>
+</main>
 <footer>
     <h3>Kontaktai</h3>
     <address>
-        <a href="tel:+37066059616">+37066059616</a><br>
-        <a href="mailto:lapienislukasp@gmail.com">lapienislukasp@gmail.com</a><br>
-        Karaliaus Mindaugo pr. 49, 44333 Kaunas<br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9178.894588936495!2d23.91918793502821!3d54.89022160661666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7227040cd00f9%3A0xe870f80a180bf379!2sAkropolis!5e0!3m2!1sen!2slt!4v1697922762187!5m2!1sen!2slt" loading="lazy"></iframe>
-    </address>
+        <p><a href="tel:+37066059616">+37066059616</a></p>
+        <p><a href="mailto:lapienislukasp@gmail.com">lapienislukasp@gmail.com</a></p>
+        <p>Karaliaus Mindaugo pr. 49, 44333 Kaunas</p>
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9178.894588936495!2d23.91918793502821!3d54.89022160661666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7227040cd00f9%3A0xe870f80a180bf379!2sAkropolis!5e0!3m2!1sen!2slt!4v1697922762187!5m2!1sen!2slt" loading="lazy"></iframe>
+        </p>
+    </address><hr>
     <p>&copy; Kelionių agentūra</p>
-</footer>
-</html>ml>1sen!2slt!4v1697922762187!5m2!1sen!2slt" loading="lazy"></iframe>
-    </address>
-    <p>&copy; Kelionių agentūra</p>
+    <nav>
+        <a href="index.html#bodyHeader">grįžti į pradzią</a>
+    </nav>
 </footer>
 </body>
 </html>

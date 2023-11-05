@@ -9,7 +9,7 @@
 <header>
     <h1>Kelionių agentūra</h1> 
     <a href="index.html">
-        <img src="images/logo.jpg" alt="logotipas" title="pagrindinis" width="100%">
+        <img src="images/logo.jpg" alt="logotipas" title="pagrindinis" style="width: 100%;">
     </a><br>
     <a href="kelioniu_uzklausos_forma.html">Kelionių užklausa</a>
     <a href="personal_blog.html">personal blog</a><hr>
@@ -21,17 +21,40 @@
     </nav><hr>
 </header>
 <main>
-
+    <h2>Prisijungimas</h2>
+    <article>
+        <form action="personal_blog.html">
+            <fieldset>
+                <label for="loginName">Prisijungimo Vardas</label>
+                <input type="text" id="loginName" name="loginName" placeholder="Prisijungimo Vardas" pattern=".{5,15}" title="turi turėti nuo 5 iki 15 bet kokių simbolių" required>
+            </fieldset>
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd" placeholder="Slaptažodis" pattern=".{5,15}" title="turi turėti nuo 5 iki 15 bet kokių simbolių" required>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+            </fieldset>
+            <fieldset>
+                <button type="reset">Atstatyti</button>
+                <button type="submit">Prisijungti</button>
+            </fieldset>
+        </form>
+    </article>
 </main>
 <footer>
     <h3>Kontaktai</h3>
     <address>
-        <a href="tel:+37066059616">+37066059616</a><br>
-        <a href="mailto:lapienislukasp@gmail.com">lapienislukasp@gmail.com</a><br>
-        Karaliaus Mindaugo pr. 49, 44333 Kaunas<br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9178.894588936495!2d23.91918793502821!3d54.89022160661666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7227040cd00f9%3A0xe870f80a180bf379!2sAkropolis!5e0!3m2!1sen!2slt!4v1697922762187!5m2!1sen!2slt" loading="lazy"></iframe>
-    </address>
+        <p><a href="tel:+37066059616">+37066059616</a></p>
+        <p><a href="mailto:lapienislukasp@gmail.com">lapienislukasp@gmail.com</a></p>
+        <p>Karaliaus Mindaugo pr. 49, 44333 Kaunas</p>
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9178.894588936495!2d23.91918793502821!3d54.89022160661666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7227040cd00f9%3A0xe870f80a180bf379!2sAkropolis!5e0!3m2!1sen!2slt!4v1697922762187!5m2!1sen!2slt" loading="lazy"></iframe>
+        </p>
+    </address><hr>
     <p>&copy; Kelionių agentūra</p>
+    <nav>
+        <a href="index.html#bodyHeader">grįžti į pradzią</a>
+    </nav>
 </footer>
 </body>
 </html>

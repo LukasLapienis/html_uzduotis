@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelionių agentūra</title>
 </head>
 <body>
-<header>
+<header id="bodyHeader">
     <h1>Kelionių agentūra</h1>
-    <img src="images/logo.jpg" alt="logotipas" width="100%"><br>
+    <img src="images/logo.jpg" alt="logotipas" style="width: 100%;"><br>
     <a href="login_form.html">Log in</a>
     <a href="kelioniu_uzklausos_forma.html">Kelionių užklausa</a>
     <a href="personal_blog.html">personal blog</a><hr>
@@ -22,21 +22,19 @@
 <main>
     <article>
         <h2>Kelionės po visa pasaulį</h2>
-        <video src="/videos/introduction.mp4" controls autoplay loop width="100%" height="70%">Nepavyko užkrauti video</video>
+        <video src="/videos/introduction.mp4" controls autoplay loop style="width: 100%; height: 70%;">Nepavyko užkrauti video</video>
     </article>
     <article id="kelioniuPasiulymai">
         <h2>Kelionių pasiūlymai</h2>
         <section>
             <h3>Kelionė į maldyvus</h3>
             <h4>Atostogos Maldyvuose stebint delfinus! Skrydis su „Turkish Airlines” ir poilsis privačioje saloje, 4* viešbučio viloje su „premium viskas įskaičiuota“</h4>
-            <img src="images/maldyvai.jpg" alt="maldyvu paveikslelis" width="50%">
+            <img src="images/maldyvai.jpg" alt="maldyvu paveikslelis" style="width: 50%;">
             <p>
                 Tikiu, kad užklupus šaltiems orams, ne vienas pagalvoja, kaip būtų gera atsidurti ten, kur džiugina saulė ir šiluma, kur gali mėgautis poilsiu paplūdimyje ir maudynėmis šiltame vandenyne. Keliauk į Maldyvus, čia apsistosi „Adaaran Select Hudhuran Fushi“ viešbučio viloje, iš kurios paplūdimį ir Indijos vandenyną pasieksi vos keliais žingsniais. Pasinaudok proga ir leiskis į išvykas, kurios jau įskaičiuotos į kelionės kainą! Išvykų metu galėsi stebėti nuostabaus grožio saulėlydžius ar pasisveikinti su vandenyno gyventojais - delfinais!
             </p>
             <button>2739&euro;</button>
-
         </section>
-
     </article>
     <article id="autonuoma">
         <h2>Autonuomos pasiūlymai</h2>
@@ -60,7 +58,7 @@
                     <tr>
                         <td>Wolkswagen Golf</td>
                         <td>
-                            <img src="/images/golf.jpg" alt="nuotrauka" width="100%"></td> 
+                            <img src="/images/golf.jpg" alt="nuotrauka" style="width: 100%;"></td> 
                         <td>50&euro;</td>
                         <td>120&euro;</td>
                         <td>200&euro;</td>
@@ -68,7 +66,7 @@
                     <tr>
                         <td>Wolkswagen Tiguan</td>
                         <td>
-                            <img src="images/tiguan.jpg" alt="nuotrauka" width="100%">
+                            <img src="images/tiguan.jpg" alt="nuotrauka" style="width: 100%;">
                         </td>
                         <td>70&euro;</td>
                         <td>130&euro;</td>
@@ -77,7 +75,7 @@
                     <tr>
                         <td>Wolkswagen Arteon</td>
                         <td>
-                            <img src="/images/arteon.jpg" width="100%" alt="nuotrauka">
+                            <img src="/images/arteon.jpg" alt="nuotrauka" style="width: 100%;">
                         </td>
                         <td>80&euro;</td>
                         <td>140&euro;</td>
@@ -110,6 +108,7 @@
         <h2>Kelionių žurnalas</h2>
         <section>
             <h3>Kokios trukmės atostogos idealiausios?</h3>
+            <a href="/images/atostoguTrukme.webp" target="_blank"><img src="/images/atostoguTrukme.webp" alt="nuotrauka" style="width: 50%;"></a>
             <p>
                 Ar pažįstate tą jausmą, kai viską atiduotumėte už papildomas kelias dienas paplūdimyje, ant banglentės ar tiesiog tinginiaudami? O gal atsimenate atostogas, kuriose paskutines dienas jau laukėte grįžimo namo? Vesdamas ir organizuodamas turus sutikau pačių įvairiausių keliautojų. Štai atpažįstamos atostogautojų grupės, kurioms net kelioms priklausau ir aš pats.
             </p>
@@ -132,6 +131,7 @@
             <p>
                 Rezultatai aiškiai rodo, kad tik 8-tą kelionės dieną mes pradedame visiškai pasinerti į vietą, kurioje esame, jaučiame didžiausią atostogų pasitenkinimą. Ir tai tęsiasi iki 11-tos atostogų dienos. Vėliau, jei kelionės planas, užimtumas nesikeičia - atostogų nuotaika gana staigiai blėsta, mes priprantame prie aplinkos, kad ir kokia neįprasta ji bebūtų, prisitaikome prie atostogų ritmo ir po truputi mintimis pradedame grįžti į darbus, prie reikalų namuose. 
             </p>
+            <a href="/images/idealiAtostoguTrukme.webp" target="_blank"><img src="/images/idealiAtostoguTrukme.webp" alt="nuotrauka" style="width: 50%;"></a>
             <p>
                 Todėl 11-tą kelionės dieną verta arba keisti kelionės ritmą, aplinką, arba pradėti kelionę namo. Tai nuolat sau sakau ir ilsėdamasis, ir organizuodamas keliones kitiems. Todėl dviejų savaičių nuotykiai ir egzotinės kelionės geriausiai pasiteisina tada, kai yra balansas tarp veiklų, gamtos, miestų, kultūros pažinimo ir visiško poilsio paplūdimyje ar kitoje ramioje vietoje. 
             </p>
@@ -177,52 +177,98 @@
             <p>
                 Net jei 11-tą egzotiškų atostogų dieną pasiekiame šiokį tokį nusiraminimą, pradedame kelti atostogų vaizdus į socialinius tinklus, atsipalaiduojame… Tada pasidžiaugiame paskutiniu saulėlydžiu kelionėje - jau laikas vykti atgal į darbus.
             </p>
+            <a href="/images/pailseti.jpeg" target="_blank"><img src="/images/pailseti.jpeg" alt="nuotrauka" style="width: 50%;"></a>
             <h4>Keli konkretūs patarimai, kaip tinkamai pailsėti kelionėje</h4>
             <p>
                 Visų šių patarimų esmė labai panaši į anksčiau pacituotą M. Šalčiaus pasakymą. Jau prieš šimtą metų lietuvių keliautojas parodė įžvalgą ir davė kelionių receptą ir šiems laikams.
-                <ol>
-                    <li>Pasidžiaukite kelionės planavimo procesu. Dabar jau šiuolaikinės studijos įrodė, kad kelionės laukimas, planavimas ir aktyvus domėjimasis būsimomis atostogomis gali atnešti ne mažiau laimės nei pačios atostogos.</li>
-                    <li>Balansuokite kelionės nuotykius ir aktyvias veiklas su atsipalaidavimu. Kiekvienoje kelionėje pasilikite laiko poilsiui po atostogų. Idealiausias planas - 10-11 dienų aktvyvios veiklos ir 3-4 dienos ramesnio laiko po palme, SPA ar prie vandenyno.</li>
-                    <li>Didesnę dalį kelionės aktyviai veikite (tik ne tai ką dirbate realiame gyvenime). Nesvarbu, ką mėgstate, tačiau pasistenkite užsiimti ta veikla dalies atostogų metu - sportuokite skirtingose pasaulio vietose, pieškite naujus kraštovaizdžius, fotografuokite įspūdžius, gaminkite ir ragaukite maistus, o didžiausią pasitenkinimą pajusite, jei kažką naujo pramoksite, praplėsite savo komforto ribas.</li>
-                    <li>Atsijunkite nuo darbo. Bet iš tikrųjų. Jei be to negalite, susiplanuokite vietą ir laiką kelionėje, kurios metu periodiškai pasitikrinsite elektroninį paštą. Idealu jei savaitę būsite kalnuose ar džiunglėse, kur interneto signalas bus labai silpnas.</li>
-                    <li>Pasilikite laiko sugrįžti į ritmą. Daugelis apklausų rodo, kad į darbus mes šokame tiesiai iš atostogų - vos ne su paplūdimio šortais į ofisą. Sugrįžimas, tai tas rytinis lėtas kavos puodelis išsikraunant daiktus, prisimenant geriausias kelionės akimirkas ir žiūrint mėgstamą serialą prieš grįžtant į darbus kitą dieną.</li>
-                    <li>Prisiminkite ir įprasminkite savo kelionių nuotykius. Suredaguokite nuotraukas, išspausdinkite kelionių nuotraukų albumą, susikvieskite draugų pasidalinti įspūdžiais, socialiniuose tinkluose pasidalinkite atsiminimais ir įžvalgomis, pasidalinkite atsiliepimais su kelionių organizatoriais ir vietos gidais, palaikykite ryšius su aplankytoje šalyje sutiktais vietos žmonėmis ir grupės nariais, galiausiai surinkite lėšų egzotiško kaimelio, kurį lankėte, bendruomenės projektui.</li>
-                </ol>
+            </p>
+            <ol>
+                <li>Pasidžiaukite kelionės planavimo procesu. Dabar jau šiuolaikinės studijos įrodė, kad kelionės laukimas, planavimas ir aktyvus domėjimasis būsimomis atostogomis gali atnešti ne mažiau laimės nei pačios atostogos.</li>
+                <li>Balansuokite kelionės nuotykius ir aktyvias veiklas su atsipalaidavimu. Kiekvienoje kelionėje pasilikite laiko poilsiui po atostogų. Idealiausias planas - 10-11 dienų aktvyvios veiklos ir 3-4 dienos ramesnio laiko po palme, SPA ar prie vandenyno.</li>
+                <li>Didesnę dalį kelionės aktyviai veikite (tik ne tai ką dirbate realiame gyvenime). Nesvarbu, ką mėgstate, tačiau pasistenkite užsiimti ta veikla dalies atostogų metu - sportuokite skirtingose pasaulio vietose, pieškite naujus kraštovaizdžius, fotografuokite įspūdžius, gaminkite ir ragaukite maistus, o didžiausią pasitenkinimą pajusite, jei kažką naujo pramoksite, praplėsite savo komforto ribas.</li>
+                <li>Atsijunkite nuo darbo. Bet iš tikrųjų. Jei be to negalite, susiplanuokite vietą ir laiką kelionėje, kurios metu periodiškai pasitikrinsite elektroninį paštą. Idealu jei savaitę būsite kalnuose ar džiunglėse, kur interneto signalas bus labai silpnas.</li>
+                <li>Pasilikite laiko sugrįžti į ritmą. Daugelis apklausų rodo, kad į darbus mes šokame tiesiai iš atostogų - vos ne su paplūdimio šortais į ofisą. Sugrįžimas, tai tas rytinis lėtas kavos puodelis išsikraunant daiktus, prisimenant geriausias kelionės akimirkas ir žiūrint mėgstamą serialą prieš grįžtant į darbus kitą dieną.</li>
+                <li>Prisiminkite ir įprasminkite savo kelionių nuotykius. Suredaguokite nuotraukas, išspausdinkite kelionių nuotraukų albumą, susikvieskite draugų pasidalinti įspūdžiais, socialiniuose tinkluose pasidalinkite atsiminimais ir įžvalgomis, pasidalinkite atsiliepimais su kelionių organizatoriais ir vietos gidais, palaikykite ryšius su aplankytoje šalyje sutiktais vietos žmonėmis ir grupės nariais, galiausiai surinkite lėšų egzotiško kaimelio, kurį lankėte, bendruomenės projektui.</li>
+            </ol>
+            <p>
                 Juk kelionės atsiminimai ir yra didžiausia gerų atostogų dovana. Įrodytas ir dar vienas dalykas - bent trys savaitės aktyvių atostogų per metus praiilgina gyvenimo trukmę ir pagerina sveikatą.
             </p>
         </section>
             <h3>Atostogos Kenijoje: kur pavalgyti Dianio kurorte?</h3>
             <h4>Restoranas prabangesniam vakarui prie vandenyno „Nomad“</h4>
+            <a href="/images/nomadRestoranas.webp" target="_blank"><img src="/images/nomadRestoranas.webp" alt="nuotrauka" style="width: 50%;"></a>
             <p>
-                Pradedu iš karto nuo prabangiausios, jaukiausios ir tikrai vienos geriausių vietų visame Dianio kurorte <a href="https://www.nomadbeachbar.com/" target="_blank">„Nomad“</a> restorano. Tai įvairiausių patiekalų virtuvė - meniu rasite ir sušių, ir picų, ir jautienos kepsnių, tačiau labiausiai čia rekomenduoju žuvies patiekalus. Kardžuvės, tuno ar tiesiog dienos laimikio patiekalai - puikiai paruošti, neperkepti. Be to, čia puikiai plaka įvairiausius kokteilius. Šalia klasikinių kokteilių siūlyčiau paragauti Dawa. Tai Kenijos mochito versija. O dawa - suahili kalba reiškia vaistus. Taigi ir kokteilis yra iš džino arba degtinės, toniko arba sodos vandens, laimo, šiek tiek imbiero ir medaus.
+                Pradedu iš karto nuo prabangiausios, jaukiausios ir tikrai vienos geriausių vietų visame Dianio kurorte <a href="https://www.nomadbeachbar.com/" target="_blank">„Nomad“</a> restorano. Tai įvairiausių patiekalų virtuvė - meniu rasite ir sušių, ir picų, ir jautienos kepsnių, tačiau labiausiai čia rekomenduoju žuvies patiekalus. Kardžuvės, tuno ar tiesiog dienos laimikio patiekalai - puikiai paruošti, neperkepti. Be to, čia puikiai plaka įvairiausius kokteilius. Šalia klasikinių kokteilių siūlyčiau paragauti Dawa. Tai Kenijos mochito versija. O <em>dawa</em> - suahili kalba reiškia vaistus. Taigi ir kokteilis yra iš džino arba degtinės, toniko arba sodos vandens, laimo, šiek tiek imbiero ir medaus.
             </p>
             <p>
                 Be to, <a href="https://www.nomadbeachbar.com/" target="_blank">„Nomad“</a> restorane be maisto dar gausite ir malonų aptarnavimą, bei staliukus tiesiai į vandenyną. Beveik kiekvieną vakarą čia užsisakius iš anksto galima sėdėti ant minkštasuolių vos ne tiesiai paplūdimyje. O šalia visko restorano teritorija turi ir puikių suvenyrų krautuvėlių, kai kada čia vyksta didesnės mugės. Puiki vieta ir vakarui, ir dienai, ir paskutinei vakarienei prieš skrydį namo, ir pirmam apsilankymui.
             </p>
+            <h4>Pigi vieta paragauti šviežių jūros gėrybių: „Sir William's Grill Seafood Cafe“</h4>
+            <a href="/images/williamSeafood.webp" target="_blank"><img src="/images/williamSeafood.webp" alt="nuotrauka" style="width: 50%;"></a>
+            <p>
+                Kenija tikrai turi dideles valgymo užeigų tradicijas. Vos ne kiekviename didesniame mieste ar kaimelyje galima užtikti užeigas ir valgyklas, kartu ir mėsines, kurių iškabos skelbia „hotel“. Tik ten tikrai ne viešbučiai, o nuo senų laikų prilipęs valgymo užeigos, užkandinės bendrinis pavadinimas.
+            </p>
+            <p>
+                Vienas iš tokių hotelių - snakryžoje stovinti trobelė <a href="https://www.facebook.com/p/Sir-William-s-SEA-FOOD-100064302512000/">„Sir William's Grill Seafood Cafe“</a> - čia verta keliauti vien dėl autentikos. Tokios vietos dažnai migruoja ir persikelia iš vietos į vietą. Anksčiau vienas labai geras restoranėlis buvo po baobabo medžiu pačiame paplūdimyje, dabar jis suprastėjo, o estafetę perėmė kiti. 
+            </p>
+            <p>
+                Skrudinti kalmarai, dieną sugauta žuvis, grilintos milžiniškos krevetės, keptas aštunkojis ir netgi šviežiai sumedžioti langustai. Tiesa, pastarųjų nei skonis kažkuo dieviškas, nei labai atsakinga juos valgyti. Pakrantės vandenyse gyvenantys langustai ir taip jaučia labai didelį spaudimą iš žvejų ir medžiotojų ir jų kiekvienais metais čia vis mažiau. Tad geriau rinkitės krevetes. 
+            </p>
+            <p>
+                Šalia žuvies čia galėsite paragauti ir tradicinių Kenijos pakrantės padažų su pomidorais, svogūnais, kalendra, čiliu ir kitais prieskoniais. Taip pat tradicinių čiapati blynų. „Tusker“ alus ar limonadai - ir jau puiki tradicinė neprabangi vakarienė.
+            </p>
+            <p>
+                Nors gali pasirodyti apšepusi, tačiau tokioje vietelėje yra ir vandens rankoms nusiplauti, ir viskas šviežia, neseniai pagauta, ir termiškai apdorota, dažniausiai tiesiai ant ugnies. Tad skrandžio problemų rizika ne didesnė, nei kitose Kenijos pakrantės vietose. 
+            </p>
         <section>
+            <h3>Automobilio nuoma Islandijoje. Patarimai</h3>
+            <h4>Pagrindiniai incidentai</h4>
+            <p>
+                <em>Nuomojant automobilį tikrai verta šiek tiek investuoti į papildomą draudimą. Kelios priežastys, kodėl:</em>
+                <ul>
+                    <li>Vėjas. Vairuodami Islandijoje atkreipkite dėmesį į vėją - jis lengvai gali išlaužti dureles ar trinktelėti į kitą automobilį jas atidarant stovėjimo aikštelėje. Dėl tos pačios priežasties, esant vėjauotai dienai, stenkitės pastatyti automobilius atokesnėje vietoje, kad ir jūsų kas netyčia neužkliudytų. </li>
+                    <li>Be draudimo gali tekti padengti islandiškas remonto išlaidas už nulaužtas ar kitų įlenktas automobilio dureles. Ir patikėkite, beveik visi keliautojai bent po vieną kartą kelionėje pamiršta prilaikyti dureles išlipdami iš automobilio, o durelės arab atlaiko (dažniausiai), arba ne.</li>
+                    <li>Dėl vėjo verta pagalvoti ir ne apie patį mažiausią automobilį. Staiga kelyje užklupusios audros Islandijoje gali tiesiogine to žodžio prasme apversti automobiliuką, ar bent jau nupūsti į šalikelę. Pavyzdžiui, romantiškojo Suzuki Jimmny džipuko Islandijoje buvo iš viso atsisakyta būtent dėl to, kad pučiant stipriam vėjui, tai buvo vienas nestabiliausių automobilių, dažniausiai apvirstančių posūkyje.</li>
+                    <li>Lavos akmenys. Dar vienas pavojus - nuo žemės pakeliami ne tokie jau ir maži akmenėliai, juodas paplūdimių žvyras, kuris patekus į audringą orą, gali tiesiog suvarpyti kėbulą mažais įlenkimais. Islandijoje beveik nėra medžių, o didelė dalis kelių driekiasi palei žvarbaus vandenyno pakrantę. Todėl visada pasitikrinkite orų prognozes ir užsisakykite draudimą nuo kėbulo pažeidimų.</li>
+                </ul>
+            <a href="https://www.skyscanner.net/carhire" target="_blank"><img src="/images/carRentAd.webp" alt="nuotrauka" title="automobilių nuomos reklama" style="width: 50%;"></a>
+            <h4>Islandijos keliai</h4>
+            <a href="/images/islandija.webp" target="_blank"><img src="/images/islandija.webp" alt="nuotrauka" style="width: 50%;"></a>
+            <p>
+                Islandijos keliai skirstomi į esfaltuotus, žvyrkelius ir F (kalnų) kelius. Pirmi du variantai dažniausiai pravažiuojami ir mažesniais automobiliais, tačiau blogu oru yra įrengti atitvarai, kuriais taip pat užveriama pavojingesnė kelio atkarpa. Jokiu būdu neapvažinėkite atitvarų, stenkitės išsiaiškinti, kas užrašyta įspėjimo ženkluose, nes važiuojant tokiais keliais net ir apdrausta mašina - atsitikus eismo įvykiui draudimas negalius. 
+            </p>
+            <p>
+                Didelė dalis įdomių Islandijos krioklių, ledynų, kanjonų pasislėpę atokiau nuo pagrindinio kelio. Privažiuoti prie tokių objektų taip pat kartais reikia kirsti aštrios susitingusios lavos kelius, islandiškus žvyrkelius. O kartais ir F raide pažymėtus kalnų kelius. Šiems keliams iš nuomos kompanijos turite turėti sutikimą ir dažniausiai 4x4 džipą. Su mažesniais autmobiliais pravažiuoti dažniausiai draudžiama. O ir daugelis kelių žiemos sezonu iš viso uždaromi. 
+            </p>
+            <p>
+                Ir čia dar nekalbame apie šalies centre esančius kelius, kuriuos raiko ledynų upės, išplauti skardžiai ar iki vasaros išsilaikančios sniego pusnys. Jei savo GPS programėlėje matote nelabai aiškų kelią - geriau jį aplenkite. 
+            </p>
+            <h4>Metų laikai ir vairavimas</h4>
+            <p>
+                Žiemą Islandijoje reikia būti labai atidiems, nes net arti miesto esasntys geri keliai gali tapti apledėję ar užpustyti. Ką jau kalbėti apie keliuką į kalnus. Pavasarį reikia pasisaugoti, kad nenutrenktumėte į kelią išeinančių avių su ėriukais. Vasarą visi pagrindiniai Islandijos keliai ir stovėjimo aikštelės tiesiog prigrūstos turistinių automobilių, todėl stenkitės vairuoti atsakingai, laikydamiesi atstumo, atsargiai lenkdami ir atidžiai stebėdami kelio ženklus. Ruduo - didelių vėjų metas, kai vieną minutę šviečią saulę, kitą - jau atsidūrėte audoroje. 
+            </p>
+            <h4>Nuomos kompanijos kontaktai</h4>
+            <p>
+                Susipažinęs su šalies išskirtinumais ir pavojai keliuose, įsigyję brangų draudimą, galite pakankamai ramiai leistis į kelią. Tik nepamirškite apžiūrėti automobilių, nusifotografuoti įbrėžimų ar įlenkimų - beveik visi Islandijos automobiliai jų turi. Taip pat turėkite nuomos kompanijos kontaktus, kad galėtume išsikviesti pagalbą ekstra atveju. Na, o jei šiek tiek taupote ir pasiėmėte minimalų draudimą arba trečiųjų šalių draudimą - būkite pasiruošę dideliems užstatams, milžiniškoms išlaidoms atsitikus eismo įvykiui ir ilgu popierių tvarkymu.
+            </p>
 
         </section>
-        <section>
-
-        </section>
-
     </article>
 </main><hr>
 <footer>
     <h3>Kontaktai</h3>
     <address>
-        <p>
-            <a href="tel:+37066059616">+37066059616</a>
-        </p>
-        <p>
-            <a href="mailto:lapienislukasp@gmail.com">lapienislukasp@gmail.com</a>
-        </p>
+        <p><a href="tel:+37066059616">+37066059616</a></p>
+        <p><a href="mailto:lapienislukasp@gmail.com">lapienislukasp@gmail.com</a></p>
         <p>Karaliaus Mindaugo pr. 49, 44333 Kaunas</p>
         <p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9178.894588936495!2d23.91918793502821!3d54.89022160661666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7227040cd00f9%3A0xe870f80a180bf379!2sAkropolis!5e0!3m2!1sen!2slt!4v1697922762187!5m2!1sen!2slt" loading="lazy"></iframe>
         </p>
     </address><hr>
     <p>&copy; Kelionių agentūra</p>
+    <nav>
+        <a href="#bodyHeader">grįžti į pradzią</a>
+    </nav>
 </footer>
 </body>
 </html>
